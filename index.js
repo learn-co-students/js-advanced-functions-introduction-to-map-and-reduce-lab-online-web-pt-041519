@@ -25,15 +25,15 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 };
 
 function reduceToAllTrue(sourceArray){
-    for (let i = 0; i < sourceArray.length; i++ ) {
-        if (!sourceArray[i]) return false;
-      }
+    for(const el of sourceArray){
+        if (!el) return false;
+    }
       return true;
 };
 
 function reduceToAnyTrue(sourceArray){
-    for (let i = 0; i < sourceArray.length; i++ ) {
-        if (sourceArray[i]) return true;
-      }
+    for(const el of sourceArray){
+        if (el) return true
+    }
       return false;
 };
