@@ -1,10 +1,9 @@
 //map-like
 const mapToNegativize = (sourceArray) => {
   let negativized = []
-  sourceArray.forEach(function(number){
-   let negativeNum = `${-number}`
-   negativized.push(parseInt(negativeNum, 10))
-  })
+  for (let i = 0; i < sourceArray.length; i++){
+    negativized.push(sourceArray[i] - sourceArray[i] * 2)
+  }
   return negativized
 }
 
@@ -16,10 +15,9 @@ const mapToNoChange = (sourceArray) => {
 
 const mapToDouble = (sourceArray) => {
   let doubled = []
-  sourceArray.forEach(function(number){
-    let multiplied = number * 2 
-    doubled.push(multiplied)
-  })
+  for (let i = 0; i < sourceArray.length; i++){
+    doubled.push(sourceArray[i] * 2)
+  }
   return doubled
 }
 
@@ -27,10 +25,9 @@ const mapToDouble = (sourceArray) => {
 
 const mapToSquare = (sourceArray) => {
   let squared = []
-  sourceArray.forEach(function(number){
-    let squaredNum = number ** 2 
-    squared.push(squaredNum)
-  })
+  for (let i = 0; i < sourceArray.length; i++){
+    squared.push(sourceArray[i] ** 2)
+  }
   return squared
 }
 
