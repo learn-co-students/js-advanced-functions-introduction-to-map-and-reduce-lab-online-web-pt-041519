@@ -6,7 +6,7 @@ function mapToNegativize(sourceArray){
     //     newArr.push(arr * (-1));
     // }
     // return newArr;
-    return sourceArray.map(a => a* -1);
+    return sourceArray.map(a => a * -1);
 }
 
 
@@ -30,7 +30,7 @@ function mapToSquare(sourceArray){
 //         newArr.push(arr * arr);
 //     }
 //     return newArr;
-    return sourceArray.map(a => a **2 );
+    return sourceArray.map(a => a ** 2 );
 }
 
 function reduceToTotal(sourceArray, startingPoint = 0){
@@ -52,7 +52,7 @@ function reduceToAllTrue(sourceArray){
 
 function reduceToAnyTrue(sourceArray){
     for(let arr of sourceArray){
-        if (arr) return true;
+        if (!!arr) return true;
     }
     return false;
 }
